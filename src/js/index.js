@@ -18,10 +18,12 @@ const navItems = [
 
 //render your react application
 ReactDOM.render(
-<div>
-    <NavBar companyName="Start Bootstrap" navItems={navItems}/>
-    <Jumbotron />
-    <Cards />
-    <Footer />
-</div>,
+    <React.Fragment>
+        <NavBar companyName="Start Bootstrap" navItems={navItems}/>
+        <div className="container">
+            <Jumbotron />
+            <Cards />
+        </div>
+        <Footer />
+    </React.Fragment>,
  document.querySelector("#app"));
