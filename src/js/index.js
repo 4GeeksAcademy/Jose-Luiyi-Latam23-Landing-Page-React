@@ -8,10 +8,18 @@ import "../styles/index.css";
 //import your own components
 import { NavBar, Jumbotron, Cards, Footer } from "./component/home.jsx";
 
+//set the navitems
+const navItems = [
+    { link: "#", text: "Home" },
+    { link: "#", text: "About" },
+    { link: "#", text: "Services" },
+    { link: "#", text: "Contact" }
+];
+
 //render your react application
 ReactDOM.render(
 <div>
-    <NavBar />
+    <NavBar companyName="Start Bootstrap" navItems={navItems}/>
     <Jumbotron />
     <Cards />
     <Footer />

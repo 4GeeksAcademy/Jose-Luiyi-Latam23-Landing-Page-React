@@ -4,12 +4,14 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const NavBar = () => {
+const NavBar = (props) => {
 	return (
 		<nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark text-light justify-content-between" >
   			<div className="container-fluid" >
-    			<a className="navbar-brand" href="#">Start Bootstrap</a>
-    				<button 
+    			<a className="navbar-brand" href="#">
+					{props.companyName}
+				</a>
+    			<button 
 					className="navbar-toggler" 
 					type="button" 
 					data-bs-toggle="collapse" 
@@ -17,23 +19,18 @@ const NavBar = () => {
 					aria-controls="navbarNav" 
 					aria-expanded="false" 
 					aria-label="Toggle navigation"
-					>
-     					<span className="navbar-toggler-icon"></span>
-   					 </button>
+				>
+     				<span className="navbar-toggler-icon"></span>
+   				</button>
     			<div className="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarNav">
 					<ul className="navbar-nav">
-						<li className="nav-item">
-							<a className="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">About</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">Services</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">Contact</a>
-						</li>
+						{props.navItems.map ((item, index) => (
+							<li className="nav-item" key={index}>
+								<a className={`nav-link ${index === 0 ? "active" : ""}`} aria-current="page" href={item.link}>
+									{item.text}
+								</a>
+							</li>
+						))} 
 					</ul>
 				</div>
 			</div>
