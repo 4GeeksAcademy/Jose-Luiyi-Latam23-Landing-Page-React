@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -37,6 +38,11 @@ const NavBar = (props) => {
 		</nav>
 	);
 };
+
+NavBar.propTypes = {
+companyName: PropTypes.string,
+navItems: PropTypes.string,
+}
 
 const Jumbotron = () => {
 	return (
