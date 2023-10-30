@@ -17,19 +17,22 @@ const navItems = [
 ];
 
 //set cards props
-const cardContent = [
-    { cardImage: "../../img/rigo-baby.jpg" },
-]
+
 
 
 
 //render your react application
 ReactDOM.render(
     <React.Fragment>
-        <NavBar companyName="Start Bootstrap" navItems={navItems}/>
+        <NavBar 
+        companyName="Start Bootstrap" 
+        navItems={navItems}
+        />
         <div className="container">
             <Jumbotron />
-            <Cards cardImage="../../img/rigo-baby.jpg" cardContent={cardContent}/>
+            <Cards 
+            cardImage="rigoImage"
+            />
         </div>
         <Footer />
     </React.Fragment>,
