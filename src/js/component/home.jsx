@@ -56,7 +56,7 @@ const Cards = () => {
 		<div className="row">
 			<div className="col-sm-3 mb-3">
 				<div className="card text-center">
-				<img src="..." className="card-img-top" alt="..."/>
+				<img src={rigoImage} className="card-img-top" alt="..."/>
 				<div className="card-body">
 					<h5 className="card-title">Special title treatment</h5>
 					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -66,7 +66,7 @@ const Cards = () => {
 			</div>
 			<div className="col-sm-3 mb-3">
 				<div className="card text-center">
-				<img src="..." className="card-img-top" alt="..."/>
+				<img src={rigoImage} className="card-img-top" alt="..."/>
 				<div className="card-body">
 					<h5 className="card-title">Special title treatment</h5>
 					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -76,7 +76,7 @@ const Cards = () => {
 			</div>
 			<div className="col-sm-3 mb-3">
 				<div className="card text-center">
-				<img src="..." className="card-img-top" alt="..."/>
+				<img src={rigoImage} className="card-img-top" alt="..."/>
 				<div className="card-body">
 					<h5 className="card-title">Special title treatment</h5>
 					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -85,7 +85,7 @@ const Cards = () => {
 				</div>
 			</div><div className="col-sm-3 mb-3">
 				<div className="card text-center">
-				<img src="..." className="card-img-top" alt="..."/>
+				<img src={rigoImage} className="card-img-top" alt="..."/>
 				<div className="card-body">
 					<h5 className="card-title">Special title treatment</h5>
 					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
