@@ -46,9 +46,22 @@ navItems: PropTypes.array,
 
 const Jumbotron = () => {
 	return (
-		<div className="">Jumbotron goes here</div>
+		<div className="bg-light p-5 rounded">
+			<h1>A Warm Welcome!</h1>
+			<p className="lead">
+				Lorem ipsum dolor sit amet consectectuur adipisicing elit lpsa, ipsam, elegendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam novis ulklo aspernatur vitae fugiat numquam repellat.
+			</p>
+			<a
+				className="btn btn-lg btn-primary"
+				href="/docs/5.0/components/navbar/"
+				role="button"
+			>
+				Call to action
+			</a>
+		</div>
 	);
 };
+
 
 const Cards = (props) => {
 
@@ -99,7 +112,14 @@ const Cards = (props) => {
 
 const Footer = () => {
 	return (
-		<div className="">Footer goes here</div>
-	)
-}
+		<nav className="navbar navbar-expand-lg navbar-dark bg-dark mt-5">
+      <div className="container-fluid">
+        <div className="row text-center justify-content-center w-100">
+          <h5 className="text">Copy right © Your Website 2023"</h5>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
 export { NavBar, Jumbotron, Cards, Footer };
