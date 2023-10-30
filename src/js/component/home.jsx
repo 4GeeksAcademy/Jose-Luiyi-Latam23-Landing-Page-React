@@ -50,7 +50,7 @@ const Jumbotron = () => {
 	);
 };
 
-const Cards = () => {
+const Cards = (props) => {
 
 	return (
 		<div className="row">
