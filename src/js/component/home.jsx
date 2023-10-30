@@ -53,37 +53,44 @@ const Jumbotron = () => {
 const Cards = () => {
 
 	return (
-		<div>
-			<div className="card">
+		<div className="row">
+			<div className="col-sm-3 mb-3">
+				<div className="card text-center">
 				<img src="..." className="card-img-top" alt="..."/>
 				<div className="card-body">
-					<h5 className="card-title">Card title</h5>
-					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h5 className="card-title">Special title treatment</h5>
+					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
 					<a href="#" className="btn btn-primary">Go somewhere</a>
 				</div>
-			</div>
-			<div className="card">
-				<img src="..." className="card-img-top" alt="..."/>
-				<div className="card-body">
-					<h5 className="card-title">Card title</h5>
-					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" className="btn btn-primary">Go somewhere</a>
 				</div>
 			</div>
-			<div className="card">
+			<div className="col-sm-3 mb-3">
+				<div className="card text-center">
 				<img src="..." className="card-img-top" alt="..."/>
 				<div className="card-body">
-					<h5 className="card-title">Card title</h5>
-					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h5 className="card-title">Special title treatment</h5>
+					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
 					<a href="#" className="btn btn-primary">Go somewhere</a>
 				</div>
+				</div>
 			</div>
-			<div className="card">
+			<div className="col-sm-3 mb-3">
+				<div className="card text-center">
 				<img src="..." className="card-img-top" alt="..."/>
 				<div className="card-body">
-					<h5 className="card-title">Card title</h5>
-					<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<h5 className="card-title">Special title treatment</h5>
+					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
 					<a href="#" className="btn btn-primary">Go somewhere</a>
+				</div>
+				</div>
+			</div><div className="col-sm-3 mb-3">
+				<div className="card text-center">
+				<img src="..." className="card-img-top" alt="..."/>
+				<div className="card-body">
+					<h5 className="card-title">Special title treatment</h5>
+					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					<a href="#" className="btn btn-primary">Go somewhere</a>
+				</div>
 				</div>
 			</div>
 		</div>
