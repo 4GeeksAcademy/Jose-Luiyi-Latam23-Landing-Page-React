@@ -112,7 +112,7 @@ const Cards = (props) => {
 
 const Footer = () => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-dark bg-dark mt-5">
+		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <div className="row text-center text-light justify-content-center w-100">
           <h5 className="text">Copy right © Your Website 2023"</h5>
