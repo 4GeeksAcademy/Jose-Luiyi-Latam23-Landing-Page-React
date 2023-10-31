@@ -8,7 +8,11 @@ import "../styles/index.css";
 import rigoImage from "../img/rigo-baby.jpg";
 
 //import your own components
-import { NavBar, Jumbotron, Cards, Footer } from "./component/home.jsx";
+import { NavBar } from "./component/navbar.jsx";
+import { Jumbotron } from "./component/jumbotron.jsx";
+import { Cards } from "./component/cards.jsx";
+import { Footer } from "./component/footer.jsx";
+
 
 //set the navitems
 const navItems = [
