@@ -71,7 +71,7 @@ const Cards = (props) => {
 			{cardsData.map((card, index) =>(
 				<div className="col-sm-3 mb-3" key={index}>
 				<div className="card text-center">
-				<img src={card.image} className="card-img-top" alt="..."/>
+				<img src={card.image} className="card-img-top mt-1" alt="..."/>
 				<div className="card-body">
 					<h5 className="card-title">{card.title}</h5>
 					<p className="card-text">{card.description}</p>
