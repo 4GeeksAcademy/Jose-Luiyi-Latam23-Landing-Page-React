@@ -17,9 +17,32 @@ const navItems = [
 ];
 
 //set cards props
-
-
-
+const cardsData = [
+ {
+    image: "",
+    title: "Card title",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ipsum!",
+    cardLink: "#",
+ },
+ {
+    image: "",
+    title: "Card title",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ipsum!",
+    cardLink: "#",
+ },
+ {
+    image: "",
+    title: "Card title",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ipsum!",
+    cardLink: "#",
+ },
+ {
+    image: "",
+    title: "Card title",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ipsum!",
+    cardLink: "#",
+ },
+];
 
 //render your react application
 ReactDOM.render(
@@ -31,7 +54,8 @@ ReactDOM.render(
         <div className="container">
             <Jumbotron />
             <Cards 
-            cardImage="rigoImage"
+            image={rigoImage}
+            cardsData={cardsData}
             />
         </div>
         <Footer />

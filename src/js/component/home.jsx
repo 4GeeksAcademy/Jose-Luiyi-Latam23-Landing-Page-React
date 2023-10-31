@@ -64,55 +64,33 @@ const Jumbotron = () => {
 
 
 const Cards = (props) => {
+	const cardsData = props.cardsData || [];
 
 	return (
 		<div className="row">
-			<div className="col-sm-3 mb-3">
+			{cardsData.map((card, index) =>(
+				<div className="col-sm-3 mb-3" key={index}>
 				<div className="card text-center">
-				<img src={rigoImage} className="card-img-top" alt="..."/>
+				<img src={card.image} className="card-img-top" alt="..."/>
 				<div className="card-body">
-					<h5 className="card-title">Special title treatment</h5>
-					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<a href="#" className="btn btn-primary">Go somewhere</a>
+					<h5 className="card-title">{card.title}</h5>
+					<p className="card-text">{card.description}</p>
+					<a href={card.link} className="btn btn-primary">Go somewhere</a>
 				</div>
 				</div>
 			</div>
-			<div className="col-sm-3 mb-3">
-				<div className="card text-center">
-				<img src={rigoImage} className="card-img-top" alt="..."/>
-				<div className="card-body">
-					<h5 className="card-title">Special title treatment</h5>
-					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<a href="#" className="btn btn-primary">Go somewhere</a>
-				</div>
-				</div>
-			</div>
-			<div className="col-sm-3 mb-3">
-				<div className="card text-center">
-				<img src={rigoImage} className="card-img-top" alt="..."/>
-				<div className="card-body">
-					<h5 className="card-title">Special title treatment</h5>
-					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<a href="#" className="btn btn-primary">Go somewhere</a>
-				</div>
-				</div>
-			</div><div className="col-sm-3 mb-3">
-				<div className="card text-center">
-				<img src={rigoImage} className="card-img-top" alt="..."/>
-				<div className="card-body">
-					<h5 className="card-title">Special title treatment</h5>
-					<p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<a href="#" className="btn btn-primary">Go somewhere</a>
-				</div>
-				</div>
-			</div>
+				))}
 		</div>
 	);
 };
 
+Cards.propTypes = {
+	cardsData: PropTypes.array,
+};
+
 const Footer = () => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">clc
       <div className="container-fluid">
         <div className="row text-center text-light justify-content-center w-100">
           <h5 className="text">Copy right © Your Website 2023</h5>
