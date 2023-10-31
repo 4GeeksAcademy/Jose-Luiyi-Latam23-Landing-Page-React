@@ -5,6 +5,8 @@ import ReactDOM from "react-dom";
 // include your styles into the webpack bundle
 import "../styles/index.css";
 
+import rigoImage from "../img/rigo-baby.jpg";
+
 //import your own components
 import { NavBar, Jumbotron, Cards, Footer } from "./component/home.jsx";
 
@@ -19,28 +21,32 @@ const navItems = [
 //set cards props
 const cardsData = [
  {
-    image: "",
+    image: rigoImage,
     title: "Card title",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ipsum!",
     cardLink: "#",
+    buttonText: "Find Out More!"
  },
  {
-    image: "",
+    image: rigoImage,
     title: "Card title",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ipsum!",
     cardLink: "#",
+    buttonText: "Find Out More!",    
  },
  {
-    image: "",
+    image: rigoImage,
     title: "Card title",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ipsum!",
     cardLink: "#",
+    buttonText: "Find Out More!",
  },
  {
-    image: "",
+    image: rigoImage,
     title: "Card title",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ipsum!",
     cardLink: "#",
+    buttonText: "Find Out More!",
  },
 ];
 
@@ -53,9 +59,7 @@ ReactDOM.render(
         />
         <div className="container">
             <Jumbotron />
-            <Cards 
-            image={rigoImage}
-            cardsData={cardsData}
+            <Cards cardsData={cardsData}
             />
         </div>
         <Footer />
