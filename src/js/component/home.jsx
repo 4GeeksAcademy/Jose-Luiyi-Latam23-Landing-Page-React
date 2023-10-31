@@ -46,7 +46,7 @@ navItems: PropTypes.array,
 
 const Jumbotron = () => {
 	return (
-		<div className="bg-light p-5 rounded">
+		<div className="bg-light p-5 rounded mb-3">
 			<h1>A Warm Welcome!</h1>
 			<p className="lead">
 				Lorem ipsum dolor sit amet consectectuur adipisicing elit lpsa, ipsam, elegendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam novis ulklo aspernatur vitae fugiat numquam repellat.
